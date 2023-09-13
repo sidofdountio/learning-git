@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    background: #0b0b0b;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    padding: 1rem;
+    line-height: 40px;
+}
+h1,h2{
+    margin: 4px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+main{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.started{
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.customer-btn{
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #272525;
+    color: white;
+    border: 1px solid #332f2f;
+    font-weight: 500;
+    transition: all ease-in-out 0.3s;
+}
+.customer-btn:hover{
+    background-color: #494646;
+    transition: all ease-in 0.3s;
+    color: #FFF;
+}
+#send{
+    min-width: 300px;
+}
+.form{
+    display: block;
+    top: 10rem;
+    border: 1px solid #eee;
+    position: relative;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.form input, button{
+    margin: 10px;
+}
+
+input{
+    border: 4px solid #4c4cc1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 40px;
+    background-color: #332f2f;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    min-width: 300px;
+    
+}
+
+input:focus{
+    border: 4px solid #4c4cc1;
+    outline: #4c4cc1;
+}
+
+
