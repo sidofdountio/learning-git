@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-size: 16px;
 }
 
-body{
+body {
     background: #0b0b0b;
     color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -15,27 +16,34 @@ body{
     padding: 1rem;
     line-height: 40px;
 }
-h1,h2{
+
+h1,
+h2 {
     margin: 4px;
 }
-ul{
+
+ul {
     text-decoration: none;
     list-style: none;
 }
-main{
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   flex-wrap: wrap;
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.started{
+
+.started {
     margin-bottom: 10px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-.customer-btn{
+
+.customer-btn {
     padding: 10px 30px;
     border-radius: 20px;
     text-align: center;
@@ -46,46 +54,49 @@ a{
     font-weight: 500;
     transition: all ease-in-out 0.3s;
 }
-.customer-btn:hover{
+
+.customer-btn:hover {
     background-color: #494646;
     transition: all ease-in 0.3s;
     color: #FFF;
 }
-#send{
+
+#send {
     min-width: 300px;
 }
-.form{
-   
+
+.form {
     display: flex;
+    position: relative;
     top: 10rem;
     border: 1px solid #eee;
-    position: relative;
-    justify-content: center;
     padding: 40px;
-    border-radius: 40px;
-   
+    border-radius: 20px;
 }
-.form p{
-    display: flex;
+
+.form p {
     position: absolute;
     top: 15rem;
-    margin-top: 10px;
+    margin-top: 30px;
     color: #4c4cc1;
+    text-align: center;
 }
-.form h1{
+
+.form h1 {
     margin-top: 10px;
     display: flex;
     position: absolute;
     top: -0.5rem;
-    
 }
 
-.form input, button{
+.form input,
+button {
     margin: 10px;
     display: block;
+    justify-content: center;
 }
 
-input{
+input {
     border: 4px solid #4c4cc1;
     padding: 10px 10px 10px 10px;
     border-radius: 40px;
@@ -94,12 +105,31 @@ input{
     font-weight: 400;
     font-size: 16px;
     min-width: 300px;
-    
 }
 
-input:focus{
+input:focus {
     border: 4px solid #4c4cc1;
     outline: #4c4cc1;
 }
 
+#message {
+    color: red;
+    position: absolute;
+    top: -40px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+@media screen and (max-width: 480px) {
+    #send {
+        min-width: 280px;
+    }
+    .form input {
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 992px) {}
