@@ -12,10 +12,11 @@
 <body>
     <div class="form">
         <h1>Hire me</h1>
-        <form action="service.php" method="post">
+        <span id="message"></span>
+        <form  method="post" id="myForm">
             <input type="email" name="userEmail" id="userEmail" placeholder="Your email" autocomplete>
             <input type="text" name="UserName" id="userName" placeholder="Your name" autocomplete>
-            <button type="submit" class="customer-btn" id="send">send</button>
+            <button type="button" class="customer-btn" id="send" onclick="addUser()">send</button>
         </form>
         <p>&COPY;2023 sidof</p>
     </div>
